@@ -31,10 +31,13 @@
         defaultPackage = self.packages.${system}.${packageName};
 
         devShell = pkgs.mkShell {
+
+          haskellPackages = pkgs.haskell.packages.ghc902;
           buildInputs = with pkgs; [
             haskellPackages.haskell-language-server # you must build it with your ghc to work
             ghcid
             cabal-install
+            calligraphy
           ];
           inputsFrom = builtins.attrValues self.packages.${system};
         };
