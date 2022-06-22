@@ -23,9 +23,8 @@ against each other for repeated play and in various kinds of tournaments.
 ## Installation ##
 
 The suggested approach it to use [stack](https://docs.haskellstack.org/en/stable/README/)
-This requires `ghc 9.0.2`
 
-Alternatively, one can run `cabal repl` which works with `ghc 8.10.7`. 
+On NixOS, nixos https://nixos.org/channels/nixos-22.05 should be in channels
 
 ## Examples ##
 
