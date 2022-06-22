@@ -5,4 +5,4 @@ resolver: lts-19.11
 
 nix:
   enable: true
-  packages: [haskell.packages.ghc901]
+  packages: []
