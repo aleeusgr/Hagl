@@ -2,7 +2,7 @@ on: [push]
 name: build
 jobs:
   runhaskell:
-    name: Hello World
+    name: test
     runs-on: ubuntu-latest # or macOS-latest, or windows-latest
     steps:
       - uses: actions/checkout@v2
@@ -11,5 +11,5 @@ jobs:
           ghc-version: '9.4.2' # Exact version of ghc to use
           # cabal-version: 'latest'. Omitted, but defalts to 'latest'
           enable-stack: true
-          stack-version: 'latest'
+          stack-version: '2.7.5'
       - run: stack test
