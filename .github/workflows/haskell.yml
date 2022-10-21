@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-haskell@v1.1
         with:
-          ghc-version: '9.4.2' # Exact version of ghc to use
+          ghc-version: '8.10.3' # Exact version of ghc to use
           # cabal-version: 'latest'. Omitted, but defalts to 'latest'
           enable-stack: true
           stack-version: '2.7.5'
